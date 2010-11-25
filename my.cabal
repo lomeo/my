@@ -1,0 +1,30 @@
+Name:                   my
+Build-Type:             Simple
+Version:                0.0.1
+Cabal-Version:          >=1.2
+License:                MIT
+License-File:           LICENSE
+Copyright:              Copyright (c) 2009, Dmitry Antonyuk
+Author:                 Dmitry Antonyuk
+Maintainer:             lomeo.nuke@gmail.com
+Stability:              experimental
+Homepage:               http://github.com/lomeo/my/
+Synopsis:               My utility library
+Description:            My is a library with a lot of utility functions that could help every Haskell programmer.
+Category:               Utils
+Tested-With:            GHC
+
+library
+  Hs-Source-Dirs:       src
+  Build-Depends:        base >= 3.0, mtl, containers, stm
+  Extensions:
+  Exposed-Modules:      My.Prelude,
+                        My.Data.Tuple,
+                        My.Data.List,
+                        My.Data.Maybe,
+                        My.Control.Monad,
+                        My.Control.Concurrent,
+                        My.Control.Concurrent.STM,
+                        My.Control.Concurrent.MaybeChan
+  Buildable:            True
+  GHC-Options:          -Wall -O2

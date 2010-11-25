@@ -1,0 +1,6 @@
+#!/bin/bash
+
+runhaskell Setup.hs configure --prefix=$HOME --user && \
+runhaskell Setup.hs build && \
+runhaskell Setup.hs haddock --hyperlink-source && \
+runhaskell Setup.hs install
