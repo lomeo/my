@@ -17,11 +17,12 @@ Tested-With:            GHC
 library
   Hs-Source-Dirs:       src
   Build-Depends:        base >= 3.0, mtl, containers, stm
-  Extensions:
+  Extensions:           GeneralizedNewtypeDeriving
   Exposed-Modules:      My.Prelude,
                         My.Data.Tuple,
                         My.Data.List,
                         My.Data.Maybe,
+                        My.Control.Applicative,
                         My.Control.Monad,
                         My.Control.Concurrent,
                         My.Control.Concurrent.STM,
